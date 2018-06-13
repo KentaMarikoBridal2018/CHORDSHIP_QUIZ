@@ -22,21 +22,10 @@
 <!--<p id="welcome"></p>-->
 <div id="welcome">
 	<div id="welcome_header" >
-		<table>
-			<tbody>
-				<tr>
-					<td>
-						<img src="bride_and_groom_small.png" style="height:20%;" />
-					</td>
-					<td>
-						Kenta & Mariko Bridal
-					</td>
-				</tr>
-			</tbody>
-		</table>
+		CHORDSHIPファミリークイズ<br>2018 in 熱海
 	</div>
 	<div id="welcome_body">
-		<img id="welcome_img" src="./kenta_Welcome.gif"  style="width:100%; position:absolute; top:0;" />
+		<img id="welcome_img" src="./CHORDSHIPクイズ_チャットオープニング.gif"  style="width:100%; position:absolute; top:0;" />
 	</div>
 	<!--
 		<div id="welcome_footer">powerd by CHORDSHIP</div>
@@ -45,7 +34,7 @@
 	
 <div id="goodAnimation">
 	<p id="goodAnimationText">ありがとうございます</p>
-	<img  src="./goodTouchAnimation.gif" width="100%" />
+	<img  src="./CHORDSHIPクイズ_チャットオープニング.gif" width="100%" />
 </div>
 
 <p id="tempCounter">0</p>
@@ -102,11 +91,12 @@
    		top:0;
    		left:0;
    		
-   		background-color:#4BA77C;
+   		background-color:rgb(255,192,0);
    		
    		font-family: Impact;
-    	font-size: 8vw;
+    	font-size: 6vw;
     	color: rgb(242,242,242);
+	text-align:center;
    }
    
    
@@ -406,7 +396,7 @@
 			    });
 			    
 			    $('#btn2').on('click', function(){
-			    	MobiAgentClient.sendMessage('[JumpKenta]','');
+			    	MobiAgentClient.sendMessage('[JumpSelect]','');
 			    });
 			    $('#btn3').on('click', function(){
 			    	MobiAgentClient.sendMessage('[JumpComment]','');
