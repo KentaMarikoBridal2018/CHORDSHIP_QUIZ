@@ -231,7 +231,7 @@
 	
 	function countupCounter() {
 
-            let target = `https://kentamarikohappywedding.azurewebsites.net/good`;
+            let target = `https://kentamarikohappy.azurewebsites.net/good`;
             $.ajax({
                 url: target,
                 data: 'json',
@@ -251,7 +251,7 @@
 	function getCounter() {
 
 
-            let target = `https://kentamarikohappywedding.azurewebsites.net/get`;
+            let target = `https://kentamarikohappy.azurewebsites.net/get`;
            
             $.ajax({
                 url: target,
@@ -386,20 +386,11 @@
 			    $('#btn1').on('click', function(){
 					countupCounter();
 					
-					switch(true){
-						case ($('#tempCounter').text() & ($('#tempCounter').text() - 1)) == 0:
-							//btnClickAnimation("🍀ありがとうございます🍀<br>※この画面は ある法則で表示されます<br>[おめでとうカウンター：" + $('#tempCounter').text() + "回]");
-							break;
-						case $('#tempCounter').text()>=350 && $('#tempCounter').text()<=360 :
-							btnClickAnimation("CHORDSHIPの目標売上は３５０憶！<br>[おめでとうカウンター：" + $('#tempCounter').text() + "回]");
-							break;
 
-						default:
-					}
 			    });
 			    
 			    $('#btn2').on('click', function(){
-			    	MobiAgentClient.sendMessage('[JumpSelect]','');
+			    	MobiAgentClient.sendMessage('[問題選択に移動]','');
 			    });
 			    $('#btn3').on('click', function(){
 			    	MobiAgentClient.sendMessage('[JumpComment]','');
